@@ -2,5 +2,8 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>MainForm.ui.qml</file>
+        <file>button.png</file>
+        <file>button-2.png</file>
+        <file>Folder01-Blue.png</file>
     </qresource>
 </RCC>

@@ -50,6 +50,7 @@ ApplicationWindow {
             ToolButton {
                 iconSource: "qrc:/Folder01-Blue.png"
                 tooltip: "Import/Scan"
+                onClicked: iter.iterateDir
             }
             ToolButton {
                 iconSource: "qrc:/button-2.png"

@@ -18,6 +18,8 @@ CONFIG += console
 CONFIG += gui
 
 QT += core
+QT += qml quick
+QT += declarative
 
 HEADERS += \
     application.h

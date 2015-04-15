@@ -13,8 +13,9 @@
 
 //void Iterator::iterateDir(QDir directory, QString indent){
 
+
 //    directory;
-//// << it.next();
+//    // << it.next();
 
 
 //    QDirIterator it(indent, QStringList() << "*.jpg", QDir::Files, QDirIterator::Subdirectories);

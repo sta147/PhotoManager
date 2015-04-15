@@ -24,7 +24,23 @@ class Iterator: public QObject {
 public:
     //contructor
     Iterator();
-    Q_INVOKABLE void iterateDir(QDir, QString);
+    //explicit Iterator (QObject* parent = 0) : QObject(parent) {}
+
+    Q_INVOKABLE void iterateDir(){
+        QDir mDir;
+
+        foreach(QFileInfo mItm, mDir.drives())
+        {
+            //qDebug() << mItm.absoluteFilePath();
+            QDirIterator it(mItm.absoluteFilePath(), QStringList() << "*.jpg", QDir::Files, QDirIterator::Subdirectories);
+            mItm.filePath();
+
+            while (it.hasNext()) {
+                qDebug() << "Directory: " << it.next();
+            }
+            //printf(mItm.absoluteFilePath());
+        }
+    }
 
     //deconstructor
     ~Iterator(){ }
